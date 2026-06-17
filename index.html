@@ -1,2 +1,27 @@
-<html>
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contador</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main class="contenedor">
+    <h1>Contador</h1>
+    <p id="contador">0</p>
+    <button id="boton">Sumar</button>
+  </main>
+
+  <script>
+    const contador = document.getElementById('contador');
+    const boton = document.getElementById('boton');
+    let cuenta = 0;
+
+    boton.addEventListener('click', () => {
+      cuenta++;
+      contador.textContent = cuenta;
+    });
+  </script>
+</body>
 </html>
