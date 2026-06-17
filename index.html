@@ -11,15 +11,22 @@
     <h1>Contador</h1>
     <p id="contador">0</p>
     <button id="boton">Sumar</button>
+    <button id="botonResta">Restar</button>
   </main>
 
   <script>
     const contador = document.getElementById('contador');
     const boton = document.getElementById('boton');
+    const botonResta = document.getElementById('botonResta');
     let cuenta = 0;
 
     boton.addEventListener('click', () => {
       cuenta++;
+      contador.textContent = cuenta;
+    });
+
+    botonResta.addEventListener('click', () => {
+      cuenta--;
       contador.textContent = cuenta;
     });
   </script>
